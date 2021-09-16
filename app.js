@@ -206,7 +206,7 @@ console.log('7 ------------------------------')
 Student.courseName = () => 'This student is enrolled in Code 301.'
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-console.log(Student.courseName());
+// console.log(Student.courseName());
 
 console.log('8 ------------------------------')
 // STEP 11
@@ -216,19 +216,21 @@ Student.prototype.scope = function() {
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
+
 console.log('9 ------------------------------')
 
-Student.prototype.scopeArrow = () => console.log(this);
+Student.prototype.scopeArrow = () => console.log(typeof(this));
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 console.log('10 ------------------------------')
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// - 'This' is an argument that is being passed in from where we invoked the constructor function above
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+//  - It is an undefined object
 // 3. Explain why "this" is different when an arrow function is used.
+//  - In an arrow function 'this' represents the object that defined the arrow function - while outside of an arrow function 'this' represents the object of the function
 //
