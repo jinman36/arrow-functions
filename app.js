@@ -227,10 +227,13 @@ console.log(joe.scopeArrow());
 
 console.log('10 ------------------------------')
 // TODO: Write a COMMENT below to answer the following questions.
+
 // 1. What is "this" when joe.scope() is invoked?
 // - 'This' is an argument that is being passed in from where we invoked the constructor function above
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //  - It is an undefined object
+
 // 3. Explain why "this" is different when an arrow function is used.
 //  - In an arrow function 'this' represents the object that defined the arrow function - while outside of an arrow function 'this' represents the object of the function
 //
